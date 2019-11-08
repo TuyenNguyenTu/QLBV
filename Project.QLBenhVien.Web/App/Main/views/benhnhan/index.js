@@ -35,7 +35,7 @@
             vm.benhNhans = [];
 
             function getBenhNhans() {
-                benhNhanService.listAll().then(function (result) {
+                benhNhanService.ListAll().then(function (result) {
                     vm.benhNhans = result.data.items;
                 });
             }
@@ -101,3 +101,13 @@
         }
     ]);
 })();
+//(function () {
+//    var app = angular.module('app').controller('app.main.views.benhnhan.index', []);
+//    app.controller('BenhNhans', function ($scope, $http) {
+//        $http.get('ListAll').then(function (d) {
+//            $scope.regdata = d.data;
+//        }, function (erro) {
+//            alert("ERROR")
+//            });
+//    })
+//})();

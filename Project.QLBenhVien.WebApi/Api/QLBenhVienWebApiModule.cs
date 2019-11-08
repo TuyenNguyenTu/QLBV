@@ -32,7 +32,18 @@ namespace Project.QLBenhVien.Api
             Configuration.Modules.AbpWebApi().DynamicApiControllerBuilder
                 .For<IBenhNhanAppService>("app/benhNhan")
                 .ForMethod("ListAll").WithVerb(HttpVerb.Get)
+                .ForMethod("Update").WithVerb(HttpVerb.Put)
+                .ForMethod("Delete").WithVerb(HttpVerb.Delete)
+                .ForMethod("GetBenhNhanById").WithVerb(HttpVerb.Get)
                 .Build();
+            //Configuration.Modules.AbpWebApi().DynamicApiControllerBuilder
+            //    .For<IBenhNhanAppService>("app/benhNhan")
+            //    .ForMethod("Update").WithVerb(HttpVerb.Put)
+            //    .Build();
+            //Configuration.Modules.AbpWebApi().DynamicApiControllerBuilder
+            //    .For<IBenhNhanAppService>("app/benhNhan")
+            //    .ForMethod("Delete").WithVerb(HttpVerb.Delete)
+            //    .Build();
 
             Configuration.Modules.AbpWebApi().HttpConfiguration.Filters.Add(new HostAuthenticationFilter("Bearer"));
             ConfigureSwaggerUi();
