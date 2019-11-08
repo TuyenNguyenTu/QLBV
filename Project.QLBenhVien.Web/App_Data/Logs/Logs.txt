@@ -5437,3 +5437,1081 @@ DEBUG 2019-11-08 09:04:14,085 [1    ] Abp.AutoMapper.AbpAutoMapperModule       -
 DEBUG 2019-11-08 09:04:14,085 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.BenhNhans.DTO.CreateBenhNhanInput
 DEBUG 2019-11-08 09:04:14,085 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Web.Models.Account.TenantChangeViewModel
 DEBUG 2019-11-08 09:04:14,085 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2019-11-08 09:04:17,616 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2019-11-08 09:04:17,617 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2019-11-08 09:04:17,618 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2019-11-08 09:04:17,619 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2019-11-08 09:04:17,620 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2019-11-08 09:04:17,624 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2019-11-08 09:04:17,625 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.BenhNhans.IBenhNhanAppService' with service name 'app/benhNhan'.
+WARN  2019-11-08 09:04:24,496 [5    ] Abp.Logging.LogHelper                    - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+DEBUG 2019-11-08 09:07:37,301 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"c44997e8-fd2e-4321-9f8a-d36f23da2739","IpAddress":"192.168.1.43","TenantId":null,"UserId":1,"ConnectTime":"2019-11-08T09:07:37.2944521+07:00","Properties":{}}
+DEBUG 2019-11-08 09:07:37,342 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: c44997e8-fd2e-4321-9f8a-d36f23da2739
+WARN  2019-11-08 09:07:40,680 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'BenhNhan' in localization source 'QLBenhVien'!
+DEBUG 2019-11-08 09:08:57,668 [22   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"e71a2d42-af70-4198-ad67-a73c43291032","IpAddress":"192.168.1.43","TenantId":null,"UserId":1,"ConnectTime":"2019-11-08T09:08:57.6686286+07:00","Properties":{}}
+WARN  2019-11-08 09:08:57,692 [15   ] naries.DictionaryBasedLocalizationSource - Can not find 'BenhNhan' in localization source 'QLBenhVien'!
+DEBUG 2019-11-08 09:08:57,702 [22   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: e71a2d42-af70-4198-ad67-a73c43291032
+DEBUG 2019-11-08 09:09:04,250 [22   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: e71a2d42-af70-4198-ad67-a73c43291032
+DEBUG 2019-11-08 09:15:27,290 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-11-08 09:15:29,164 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2019-11-08 09:15:29,172 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.Web.QLBenhVienWebModule, Project.QLBenhVien.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:15:29,176 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.QLBenhVienDataModule, Project.QLBenhVien.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:15:29,177 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:15:29,177 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:15:29,177 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:15:29,177 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:15:29,178 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:15:29,178 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:15:29,178 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.QLBenhVienCoreModule, Project.QLBenhVien.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:15:29,178 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.QLBenhVienApplicationModule, Project.QLBenhVien.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:15:29,178 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:15:29,179 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.Api.QLBenhVienWebApiModule, Project.QLBenhVien.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:15:29,179 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:15:29,179 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:15:29,179 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:15:29,179 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:15:29,179 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:15:29,183 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2019-11-08 09:15:31,016 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 09:15:31,016 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 09:15:31,016 [1    ] o.Configuration.LanguageManagementConfig - Converted QLBenhVien (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 09:15:31,016 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 09:15:31,449 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Project.QLBenhVien.EntityFramework.QLBenhVienDbContext, Project.QLBenhVien.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:15:33,408 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-11-08 09:15:33,528 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-11-08 09:15:33,587 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-11-08 09:15:33,596 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: QLBenhVien
+DEBUG 2019-11-08 09:15:33,605 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-11-08 09:15:34,335 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2019-11-08 09:15:34,358 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 12 classes define auto mapping attributes
+DEBUG 2019-11-08 09:15:34,358 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-11-08 09:15:34,369 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-11-08 09:15:34,370 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Users.Dto.CreateUserDto
+DEBUG 2019-11-08 09:15:34,370 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Users.Dto.UpdateUserDto
+DEBUG 2019-11-08 09:15:34,370 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Users.Dto.UserDto
+DEBUG 2019-11-08 09:15:34,371 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Roles.Dto.PermissionDto
+DEBUG 2019-11-08 09:15:34,372 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-11-08 09:15:34,372 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.MultiTenancy.Dto.EditTenantDto
+DEBUG 2019-11-08 09:15:34,372 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.MultiTenancy.Dto.TenantDto
+DEBUG 2019-11-08 09:15:34,372 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.BenhNhans.DTO.CreateBenhNhanInput
+DEBUG 2019-11-08 09:15:34,372 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Web.Models.Account.TenantChangeViewModel
+DEBUG 2019-11-08 09:15:34,372 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2019-11-08 09:15:40,770 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2019-11-08 09:15:40,771 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2019-11-08 09:15:40,773 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2019-11-08 09:15:40,774 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2019-11-08 09:15:40,776 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2019-11-08 09:15:40,777 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2019-11-08 09:15:40,777 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.BenhNhans.IBenhNhanAppService' with service name 'app/benhNhan'.
+DEBUG 2019-11-08 09:16:14,748 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"4ba273e6-c58b-488b-9c18-36ca84a0fb4b","IpAddress":"192.168.1.43","TenantId":null,"UserId":1,"ConnectTime":"2019-11-08T09:16:14.7400395+07:00","Properties":{}}
+DEBUG 2019-11-08 09:16:14,951 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 4ba273e6-c58b-488b-9c18-36ca84a0fb4b
+WARN  2019-11-08 09:18:03,771 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'BenhNhan' in localization source 'QLBenhVien'!
+WARN  2019-11-08 09:18:13,949 [8    ] naries.DictionaryBasedLocalizationSource - Can not find 'Refresh' in localization source 'QLBenhVien'!
+WARN  2019-11-08 09:18:20,575 [8    ] naries.DictionaryBasedLocalizationSource - Can not find 'Refresh' in localization source 'QLBenhVien'!
+DEBUG 2019-11-08 09:18:21,135 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"abd69620-ce94-4f11-8d55-03438bee2333","IpAddress":"192.168.1.43","TenantId":null,"UserId":1,"ConnectTime":"2019-11-08T09:18:21.1356798+07:00","Properties":{}}
+DEBUG 2019-11-08 09:18:21,162 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: abd69620-ce94-4f11-8d55-03438bee2333
+WARN  2019-11-08 09:18:40,118 [20   ] naries.DictionaryBasedLocalizationSource - Can not find 'BenhNhan' in localization source 'QLBenhVien'!
+DEBUG 2019-11-08 09:18:45,363 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: abd69620-ce94-4f11-8d55-03438bee2333
+WARN  2019-11-08 09:18:46,002 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'BenhNhan' in localization source 'QLBenhVien'!
+DEBUG 2019-11-08 09:18:46,737 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"ed5d2457-24d1-4dd3-a4f5-68a16012669f","IpAddress":"192.168.1.43","TenantId":null,"UserId":1,"ConnectTime":"2019-11-08T09:18:46.7377721+07:00","Properties":{}}
+DEBUG 2019-11-08 09:18:46,763 [12   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: ed5d2457-24d1-4dd3-a4f5-68a16012669f
+DEBUG 2019-11-08 09:18:53,450 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 4ba273e6-c58b-488b-9c18-36ca84a0fb4b
+DEBUG 2019-11-08 09:29:22,112 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-11-08 09:29:22,714 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2019-11-08 09:29:22,724 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.Web.QLBenhVienWebModule, Project.QLBenhVien.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:29:22,726 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.QLBenhVienDataModule, Project.QLBenhVien.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:29:22,727 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:29:22,727 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:29:22,727 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:29:22,727 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:29:22,727 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:29:22,728 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:29:22,728 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.QLBenhVienCoreModule, Project.QLBenhVien.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:29:22,728 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.QLBenhVienApplicationModule, Project.QLBenhVien.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:29:22,728 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:29:22,728 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.Api.QLBenhVienWebApiModule, Project.QLBenhVien.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:29:22,728 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:29:22,729 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:29:22,729 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:29:22,729 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:29:22,729 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:29:22,733 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2019-11-08 09:29:24,506 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 09:29:24,506 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 09:29:24,506 [1    ] o.Configuration.LanguageManagementConfig - Converted QLBenhVien (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 09:29:24,506 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 09:29:24,951 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Project.QLBenhVien.EntityFramework.QLBenhVienDbContext, Project.QLBenhVien.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:29:26,837 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-11-08 09:29:26,934 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-11-08 09:29:26,965 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-11-08 09:29:26,975 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: QLBenhVien
+DEBUG 2019-11-08 09:29:26,984 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-11-08 09:29:27,202 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2019-11-08 09:29:27,225 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 12 classes define auto mapping attributes
+DEBUG 2019-11-08 09:29:27,225 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-11-08 09:29:27,229 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-11-08 09:29:27,230 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Users.Dto.CreateUserDto
+DEBUG 2019-11-08 09:29:27,230 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Users.Dto.UpdateUserDto
+DEBUG 2019-11-08 09:29:27,230 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Users.Dto.UserDto
+DEBUG 2019-11-08 09:29:27,230 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Roles.Dto.PermissionDto
+DEBUG 2019-11-08 09:29:27,231 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-11-08 09:29:27,231 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.MultiTenancy.Dto.EditTenantDto
+DEBUG 2019-11-08 09:29:27,231 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.MultiTenancy.Dto.TenantDto
+DEBUG 2019-11-08 09:29:27,231 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.BenhNhans.DTO.CreateBenhNhanInput
+DEBUG 2019-11-08 09:29:27,231 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Web.Models.Account.TenantChangeViewModel
+DEBUG 2019-11-08 09:29:27,231 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2019-11-08 09:29:30,646 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2019-11-08 09:29:30,648 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2019-11-08 09:29:30,649 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2019-11-08 09:29:30,650 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2019-11-08 09:29:30,651 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2019-11-08 09:29:30,651 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2019-11-08 09:29:30,652 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.BenhNhans.IBenhNhanAppService' with service name 'app/benhNhan'.
+DEBUG 2019-11-08 09:29:56,301 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"0ac75120-539e-4d43-8079-8496cd7c919f","IpAddress":"192.168.1.43","TenantId":null,"UserId":1,"ConnectTime":"2019-11-08T09:29:56.2946348+07:00","Properties":{}}
+DEBUG 2019-11-08 09:29:56,383 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 0ac75120-539e-4d43-8079-8496cd7c919f
+WARN  2019-11-08 09:29:57,052 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'BenhNhan' in localization source 'QLBenhVien'!
+WARN  2019-11-08 09:30:09,868 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'BenhNhan' in localization source 'QLBenhVien'!
+DEBUG 2019-11-08 09:30:10,772 [23   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"59174cb1-4bb4-4407-9576-9a69c35b9e19","IpAddress":"192.168.1.43","TenantId":null,"UserId":1,"ConnectTime":"2019-11-08T09:30:10.7726257+07:00","Properties":{}}
+DEBUG 2019-11-08 09:30:10,847 [23   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 59174cb1-4bb4-4407-9576-9a69c35b9e19
+DEBUG 2019-11-08 09:30:40,951 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 0ac75120-539e-4d43-8079-8496cd7c919f
+DEBUG 2019-11-08 09:36:05,297 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-11-08 09:36:05,952 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2019-11-08 09:36:05,960 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.Web.QLBenhVienWebModule, Project.QLBenhVien.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:36:05,962 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.QLBenhVienDataModule, Project.QLBenhVien.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:36:05,962 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:36:05,962 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:36:05,962 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:36:05,962 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:36:05,963 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:36:05,963 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:36:05,963 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.QLBenhVienCoreModule, Project.QLBenhVien.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:36:05,963 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.QLBenhVienApplicationModule, Project.QLBenhVien.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:36:05,963 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:36:05,963 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.Api.QLBenhVienWebApiModule, Project.QLBenhVien.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:36:05,964 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:36:05,964 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:36:05,964 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:36:05,964 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:36:05,964 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:36:05,967 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2019-11-08 09:36:07,110 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 09:36:07,110 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 09:36:07,110 [1    ] o.Configuration.LanguageManagementConfig - Converted QLBenhVien (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 09:36:07,110 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 09:36:07,548 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Project.QLBenhVien.EntityFramework.QLBenhVienDbContext, Project.QLBenhVien.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:36:08,765 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-11-08 09:36:08,837 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-11-08 09:36:08,864 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-11-08 09:36:08,871 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: QLBenhVien
+DEBUG 2019-11-08 09:36:08,880 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-11-08 09:36:09,029 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2019-11-08 09:36:09,051 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 12 classes define auto mapping attributes
+DEBUG 2019-11-08 09:36:09,051 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-11-08 09:36:09,054 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-11-08 09:36:09,056 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Users.Dto.CreateUserDto
+DEBUG 2019-11-08 09:36:09,058 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Users.Dto.UpdateUserDto
+DEBUG 2019-11-08 09:36:09,061 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Users.Dto.UserDto
+DEBUG 2019-11-08 09:36:09,061 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Roles.Dto.PermissionDto
+DEBUG 2019-11-08 09:36:09,062 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-11-08 09:36:09,062 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.MultiTenancy.Dto.EditTenantDto
+DEBUG 2019-11-08 09:36:09,062 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.MultiTenancy.Dto.TenantDto
+DEBUG 2019-11-08 09:36:09,062 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.BenhNhans.DTO.CreateBenhNhanInput
+DEBUG 2019-11-08 09:36:09,062 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Web.Models.Account.TenantChangeViewModel
+DEBUG 2019-11-08 09:36:09,062 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2019-11-08 09:36:12,718 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2019-11-08 09:36:12,719 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2019-11-08 09:36:12,720 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2019-11-08 09:36:12,724 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2019-11-08 09:36:12,725 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2019-11-08 09:36:12,727 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2019-11-08 09:36:12,728 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.BenhNhans.IBenhNhanAppService' with service name 'app/benhNhan'.
+DEBUG 2019-11-08 09:36:28,392 [19   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"d3ac72a8-9b5a-4060-90e6-aadd575ff5e4","IpAddress":"192.168.1.43","TenantId":null,"UserId":1,"ConnectTime":"2019-11-08T09:36:28.3865414+07:00","Properties":{}}
+DEBUG 2019-11-08 09:36:28,491 [11   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: d3ac72a8-9b5a-4060-90e6-aadd575ff5e4
+WARN  2019-11-08 09:37:15,306 [28   ] rity.AntiForgery.AbpAntiForgeryApiFilter - Empty or invalid anti forgery header token.
+WARN  2019-11-08 09:37:15,306 [28   ] rity.AntiForgery.AbpAntiForgeryApiFilter - Requested URI: http://localhost:6235/api/services/app/benhNhan/Create
+DEBUG 2019-11-08 09:39:41,303 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-11-08 09:39:41,327 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2019-11-08 09:39:41,334 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.Web.QLBenhVienWebModule, Project.QLBenhVien.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:39:41,335 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.QLBenhVienDataModule, Project.QLBenhVien.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:39:41,336 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:39:41,336 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:39:41,336 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:39:41,336 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:39:41,336 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:39:41,337 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:39:41,337 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.QLBenhVienCoreModule, Project.QLBenhVien.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:39:41,337 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.QLBenhVienApplicationModule, Project.QLBenhVien.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:39:41,337 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:39:41,337 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.Api.QLBenhVienWebApiModule, Project.QLBenhVien.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:39:41,337 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:39:41,337 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:39:41,337 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:39:41,338 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:39:41,338 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:39:41,342 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2019-11-08 09:39:41,983 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 09:39:41,983 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 09:39:41,983 [1    ] o.Configuration.LanguageManagementConfig - Converted QLBenhVien (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 09:39:41,983 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 09:39:42,419 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Project.QLBenhVien.EntityFramework.QLBenhVienDbContext, Project.QLBenhVien.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 09:39:45,421 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-11-08 09:39:45,479 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-11-08 09:39:45,499 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-11-08 09:39:45,510 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: QLBenhVien
+DEBUG 2019-11-08 09:39:45,517 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-11-08 09:39:45,679 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2019-11-08 09:39:45,699 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 12 classes define auto mapping attributes
+DEBUG 2019-11-08 09:39:45,699 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-11-08 09:39:45,703 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-11-08 09:39:45,703 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Users.Dto.CreateUserDto
+DEBUG 2019-11-08 09:39:45,703 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Users.Dto.UpdateUserDto
+DEBUG 2019-11-08 09:39:45,703 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Users.Dto.UserDto
+DEBUG 2019-11-08 09:39:45,704 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Roles.Dto.PermissionDto
+DEBUG 2019-11-08 09:39:45,704 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-11-08 09:39:45,704 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.MultiTenancy.Dto.EditTenantDto
+DEBUG 2019-11-08 09:39:45,704 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.MultiTenancy.Dto.TenantDto
+DEBUG 2019-11-08 09:39:45,704 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.BenhNhans.DTO.CreateBenhNhanInput
+DEBUG 2019-11-08 09:39:45,704 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Web.Models.Account.TenantChangeViewModel
+DEBUG 2019-11-08 09:39:45,704 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2019-11-08 09:39:48,394 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2019-11-08 09:39:48,395 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2019-11-08 09:39:48,396 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2019-11-08 09:39:48,397 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2019-11-08 09:39:48,398 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2019-11-08 09:39:48,399 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2019-11-08 09:39:48,400 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.BenhNhans.IBenhNhanAppService' with service name 'app/benhNhan'.
+WARN  2019-11-08 09:39:53,821 [5    ] Abp.Logging.LogHelper                    - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+WARN  2019-11-08 09:40:22,438 [6    ] rity.AntiForgery.AbpAntiForgeryApiFilter - Empty or invalid anti forgery header token.
+WARN  2019-11-08 09:40:22,438 [6    ] rity.AntiForgery.AbpAntiForgeryApiFilter - Requested URI: http://localhost:6235/api/services/app/benhNhan/Create
+DEBUG 2019-11-08 20:33:49,315 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-11-08 20:33:49,340 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2019-11-08 20:33:49,349 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.Web.QLBenhVienWebModule, Project.QLBenhVien.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:33:49,351 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.QLBenhVienDataModule, Project.QLBenhVien.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:33:49,351 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:33:49,352 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:33:49,352 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:33:49,352 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:33:49,352 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:33:49,353 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:33:49,353 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.QLBenhVienCoreModule, Project.QLBenhVien.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:33:49,353 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.QLBenhVienApplicationModule, Project.QLBenhVien.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:33:49,353 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:33:49,353 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.Api.QLBenhVienWebApiModule, Project.QLBenhVien.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:33:49,353 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:33:49,354 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:33:49,354 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:33:49,354 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:33:49,354 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:33:49,358 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2019-11-08 20:33:50,137 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 20:33:50,137 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 20:33:50,137 [1    ] o.Configuration.LanguageManagementConfig - Converted QLBenhVien (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 20:33:50,137 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 20:33:50,647 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Project.QLBenhVien.EntityFramework.QLBenhVienDbContext, Project.QLBenhVien.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:33:54,630 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-11-08 20:33:54,727 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-11-08 20:33:54,751 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-11-08 20:33:54,759 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: QLBenhVien
+DEBUG 2019-11-08 20:33:54,767 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-11-08 20:33:54,946 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2019-11-08 20:33:54,981 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 12 classes define auto mapping attributes
+DEBUG 2019-11-08 20:33:54,981 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-11-08 20:33:54,985 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-11-08 20:33:54,985 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Users.Dto.CreateUserDto
+DEBUG 2019-11-08 20:33:54,986 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Users.Dto.UpdateUserDto
+DEBUG 2019-11-08 20:33:54,986 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Users.Dto.UserDto
+DEBUG 2019-11-08 20:33:54,986 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Roles.Dto.PermissionDto
+DEBUG 2019-11-08 20:33:54,987 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-11-08 20:33:54,987 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.MultiTenancy.Dto.EditTenantDto
+DEBUG 2019-11-08 20:33:54,987 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.MultiTenancy.Dto.TenantDto
+DEBUG 2019-11-08 20:33:54,987 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.BenhNhans.DTO.CreateBenhNhanInput
+DEBUG 2019-11-08 20:33:54,987 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Web.Models.Account.TenantChangeViewModel
+DEBUG 2019-11-08 20:33:54,987 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2019-11-08 20:34:00,552 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2019-11-08 20:34:00,553 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2019-11-08 20:34:00,554 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2019-11-08 20:34:00,556 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2019-11-08 20:34:00,559 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2019-11-08 20:34:00,564 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2019-11-08 20:34:00,565 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.BenhNhans.IBenhNhanAppService' with service name 'app/benhNhan'.
+WARN  2019-11-08 20:34:07,751 [6    ] Abp.Logging.LogHelper                    - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+DEBUG 2019-11-08 20:34:51,376 [15   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"57cdb51c-66a6-4822-887e-00250420da2f","IpAddress":"192.168.1.43","TenantId":null,"UserId":1,"ConnectTime":"2019-11-08T20:34:51.3700254+07:00","Properties":{}}
+DEBUG 2019-11-08 20:34:51,465 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 57cdb51c-66a6-4822-887e-00250420da2f
+WARN  2019-11-08 20:35:02,030 [13   ] naries.DictionaryBasedLocalizationSource - Can not find 'BenhNhan' in localization source 'QLBenhVien'!
+DEBUG 2019-11-08 20:35:09,838 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 57cdb51c-66a6-4822-887e-00250420da2f
+WARN  2019-11-08 20:35:11,297 [15   ] naries.DictionaryBasedLocalizationSource - Can not find 'BenhNhan' in localization source 'QLBenhVien'!
+DEBUG 2019-11-08 20:35:12,080 [17   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"f0a46419-6b2d-4bad-8392-f48a37d1856b","IpAddress":"192.168.1.43","TenantId":null,"UserId":1,"ConnectTime":"2019-11-08T20:35:12.0800442+07:00","Properties":{}}
+DEBUG 2019-11-08 20:35:12,147 [17   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: f0a46419-6b2d-4bad-8392-f48a37d1856b
+DEBUG 2019-11-08 20:38:14,181 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-11-08 20:38:14,201 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2019-11-08 20:38:14,210 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.Web.QLBenhVienWebModule, Project.QLBenhVien.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:38:14,212 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.QLBenhVienDataModule, Project.QLBenhVien.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:38:14,212 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:38:14,212 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:38:14,212 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:38:14,212 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:38:14,213 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:38:14,213 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:38:14,213 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.QLBenhVienCoreModule, Project.QLBenhVien.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:38:14,213 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.QLBenhVienApplicationModule, Project.QLBenhVien.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:38:14,213 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:38:14,213 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.Api.QLBenhVienWebApiModule, Project.QLBenhVien.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:38:14,214 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:38:14,214 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:38:14,214 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:38:14,214 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:38:14,214 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:38:14,219 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2019-11-08 20:38:15,198 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 20:38:15,198 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 20:38:15,198 [1    ] o.Configuration.LanguageManagementConfig - Converted QLBenhVien (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 20:38:15,198 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 20:38:15,645 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Project.QLBenhVien.EntityFramework.QLBenhVienDbContext, Project.QLBenhVien.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:38:18,667 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-11-08 20:38:18,728 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-11-08 20:38:18,747 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-11-08 20:38:18,754 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: QLBenhVien
+DEBUG 2019-11-08 20:38:18,764 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-11-08 20:38:19,006 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2019-11-08 20:38:19,044 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 12 classes define auto mapping attributes
+DEBUG 2019-11-08 20:38:19,044 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-11-08 20:38:19,058 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-11-08 20:38:19,058 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Users.Dto.CreateUserDto
+DEBUG 2019-11-08 20:38:19,058 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Users.Dto.UpdateUserDto
+DEBUG 2019-11-08 20:38:19,061 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Users.Dto.UserDto
+DEBUG 2019-11-08 20:38:19,062 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Roles.Dto.PermissionDto
+DEBUG 2019-11-08 20:38:19,062 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-11-08 20:38:19,062 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.MultiTenancy.Dto.EditTenantDto
+DEBUG 2019-11-08 20:38:19,062 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.MultiTenancy.Dto.TenantDto
+DEBUG 2019-11-08 20:38:19,062 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.BenhNhans.DTO.CreateBenhNhanInput
+DEBUG 2019-11-08 20:38:19,062 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Web.Models.Account.TenantChangeViewModel
+DEBUG 2019-11-08 20:38:19,062 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2019-11-08 20:38:21,695 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2019-11-08 20:38:21,696 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2019-11-08 20:38:21,698 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2019-11-08 20:38:21,699 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2019-11-08 20:38:21,700 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2019-11-08 20:38:21,701 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2019-11-08 20:38:21,702 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.BenhNhans.IBenhNhanAppService' with service name 'app/benhNhan'.
+DEBUG 2019-11-08 20:38:38,008 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"8c1823ff-6c9f-4a39-b37a-5fbefb0764d8","IpAddress":"192.168.1.43","TenantId":null,"UserId":1,"ConnectTime":"2019-11-08T20:38:38.0029362+07:00","Properties":{}}
+DEBUG 2019-11-08 20:38:38,062 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 8c1823ff-6c9f-4a39-b37a-5fbefb0764d8
+WARN  2019-11-08 20:39:15,052 [14   ] naries.DictionaryBasedLocalizationSource - Can not find 'BenhNhan' in localization source 'QLBenhVien'!
+DEBUG 2019-11-08 20:39:20,289 [19   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 8c1823ff-6c9f-4a39-b37a-5fbefb0764d8
+WARN  2019-11-08 20:39:21,077 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'BenhNhan' in localization source 'QLBenhVien'!
+DEBUG 2019-11-08 20:39:21,847 [24   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"5825576e-5e5f-42f4-b128-c78c7d2e7f81","IpAddress":"192.168.1.43","TenantId":null,"UserId":1,"ConnectTime":"2019-11-08T20:39:21.8478972+07:00","Properties":{}}
+DEBUG 2019-11-08 20:39:21,861 [11   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 5825576e-5e5f-42f4-b128-c78c7d2e7f81
+DEBUG 2019-11-08 20:51:30,478 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-11-08 20:51:30,497 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2019-11-08 20:51:30,512 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.Web.QLBenhVienWebModule, Project.QLBenhVien.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:51:30,514 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.QLBenhVienDataModule, Project.QLBenhVien.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:51:30,514 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:51:30,514 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:51:30,514 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:51:30,514 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:51:30,515 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:51:30,515 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:51:30,515 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.QLBenhVienCoreModule, Project.QLBenhVien.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:51:30,515 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.QLBenhVienApplicationModule, Project.QLBenhVien.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:51:30,516 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:51:30,516 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.Api.QLBenhVienWebApiModule, Project.QLBenhVien.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:51:30,516 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:51:30,516 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:51:30,516 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:51:30,516 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:51:30,516 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:51:30,519 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2019-11-08 20:51:31,371 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 20:51:31,371 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 20:51:31,371 [1    ] o.Configuration.LanguageManagementConfig - Converted QLBenhVien (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 20:51:31,371 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 20:51:31,822 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Project.QLBenhVien.EntityFramework.QLBenhVienDbContext, Project.QLBenhVien.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:51:35,328 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-11-08 20:51:35,397 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-11-08 20:51:35,416 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-11-08 20:51:35,423 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: QLBenhVien
+DEBUG 2019-11-08 20:51:35,432 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-11-08 20:51:35,573 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2019-11-08 20:51:35,596 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 12 classes define auto mapping attributes
+DEBUG 2019-11-08 20:51:35,596 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-11-08 20:51:35,600 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-11-08 20:51:35,600 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Users.Dto.CreateUserDto
+DEBUG 2019-11-08 20:51:35,601 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Users.Dto.UpdateUserDto
+DEBUG 2019-11-08 20:51:35,601 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Users.Dto.UserDto
+DEBUG 2019-11-08 20:51:35,601 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Roles.Dto.PermissionDto
+DEBUG 2019-11-08 20:51:35,601 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-11-08 20:51:35,601 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.MultiTenancy.Dto.EditTenantDto
+DEBUG 2019-11-08 20:51:35,601 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.MultiTenancy.Dto.TenantDto
+DEBUG 2019-11-08 20:51:35,601 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.BenhNhans.DTO.CreateBenhNhanInput
+DEBUG 2019-11-08 20:51:35,601 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Web.Models.Account.TenantChangeViewModel
+DEBUG 2019-11-08 20:51:35,601 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2019-11-08 20:51:38,470 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2019-11-08 20:51:38,472 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2019-11-08 20:51:38,473 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2019-11-08 20:51:38,478 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2019-11-08 20:51:38,479 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2019-11-08 20:51:38,480 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2019-11-08 20:51:38,481 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.BenhNhans.IBenhNhanAppService' with service name 'app/benhNhan'.
+FATAL 2019-11-08 20:51:38,498 [1    ] Abp.AbpBootstrapper                      - Castle.MicroKernel.ComponentRegistrationException: Component Abp.WebApi.Controllers.Dynamic.Interceptors.AbpDynamicApiControllerInterceptor`1[[Project.QLBenhVien.Sessions.ISessionAppService, Project.QLBenhVien.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] could not be registered. There is already a component with that name. Did you want to modify the existing component instead? If not, make sure you specify a unique name.
+   at Castle.MicroKernel.SubSystems.Naming.DefaultNamingSubSystem.Register(IHandler handler)
+   at Castle.MicroKernel.DefaultKernel.AddCustomComponent(ComponentModel model)
+   at Castle.MicroKernel.Registration.ComponentRegistration`1.Castle.MicroKernel.Registration.IRegistration.Register(IKernelInternal kernel)
+   at Castle.MicroKernel.DefaultKernel.Register(IRegistration[] registrations)
+   at Castle.Windsor.WindsorContainer.Register(IRegistration[] registrations)
+   at Abp.WebApi.AbpWebApiModule.PostInitialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_2(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+Castle.MicroKernel.ComponentRegistrationException: Component Abp.WebApi.Controllers.Dynamic.Interceptors.AbpDynamicApiControllerInterceptor`1[[Project.QLBenhVien.Sessions.ISessionAppService, Project.QLBenhVien.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] could not be registered. There is already a component with that name. Did you want to modify the existing component instead? If not, make sure you specify a unique name.
+   at Castle.MicroKernel.SubSystems.Naming.DefaultNamingSubSystem.Register(IHandler handler)
+   at Castle.MicroKernel.DefaultKernel.AddCustomComponent(ComponentModel model)
+   at Castle.MicroKernel.Registration.ComponentRegistration`1.Castle.MicroKernel.Registration.IRegistration.Register(IKernelInternal kernel)
+   at Castle.MicroKernel.DefaultKernel.Register(IRegistration[] registrations)
+   at Castle.Windsor.WindsorContainer.Register(IRegistration[] registrations)
+   at Abp.WebApi.AbpWebApiModule.PostInitialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_2(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+DEBUG 2019-11-08 20:53:56,264 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-11-08 20:53:57,289 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2019-11-08 20:53:57,298 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.Web.QLBenhVienWebModule, Project.QLBenhVien.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:53:57,300 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.QLBenhVienDataModule, Project.QLBenhVien.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:53:57,300 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:53:57,301 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:53:57,301 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:53:57,301 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:53:57,301 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:53:57,302 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:53:57,302 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.QLBenhVienCoreModule, Project.QLBenhVien.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:53:57,302 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.QLBenhVienApplicationModule, Project.QLBenhVien.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:53:57,302 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:53:57,302 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.Api.QLBenhVienWebApiModule, Project.QLBenhVien.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:53:57,302 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:53:57,303 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:53:57,303 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:53:57,303 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:53:57,303 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:53:57,306 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2019-11-08 20:53:58,568 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 20:53:58,568 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 20:53:58,568 [1    ] o.Configuration.LanguageManagementConfig - Converted QLBenhVien (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 20:53:58,568 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 20:53:59,073 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Project.QLBenhVien.EntityFramework.QLBenhVienDbContext, Project.QLBenhVien.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:54:00,770 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-11-08 20:54:00,863 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-11-08 20:54:00,883 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-11-08 20:54:00,890 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: QLBenhVien
+DEBUG 2019-11-08 20:54:00,901 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-11-08 20:54:01,155 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2019-11-08 20:54:01,179 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 12 classes define auto mapping attributes
+DEBUG 2019-11-08 20:54:01,179 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-11-08 20:54:01,184 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-11-08 20:54:01,185 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Users.Dto.CreateUserDto
+DEBUG 2019-11-08 20:54:01,186 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Users.Dto.UpdateUserDto
+DEBUG 2019-11-08 20:54:01,186 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Users.Dto.UserDto
+DEBUG 2019-11-08 20:54:01,186 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Roles.Dto.PermissionDto
+DEBUG 2019-11-08 20:54:01,186 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-11-08 20:54:01,186 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.MultiTenancy.Dto.EditTenantDto
+DEBUG 2019-11-08 20:54:01,186 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.MultiTenancy.Dto.TenantDto
+DEBUG 2019-11-08 20:54:01,186 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.BenhNhans.DTO.CreateBenhNhanInput
+DEBUG 2019-11-08 20:54:01,187 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Web.Models.Account.TenantChangeViewModel
+DEBUG 2019-11-08 20:54:01,187 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2019-11-08 20:54:06,036 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2019-11-08 20:54:06,037 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2019-11-08 20:54:06,038 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2019-11-08 20:54:06,039 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2019-11-08 20:54:06,040 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2019-11-08 20:54:06,041 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2019-11-08 20:54:06,043 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.BenhNhans.IBenhNhanAppService' with service name 'app/benhNhan'.
+FATAL 2019-11-08 20:54:06,047 [1    ] Abp.AbpBootstrapper                      - Castle.MicroKernel.ComponentRegistrationException: Component Abp.WebApi.Controllers.Dynamic.Interceptors.AbpDynamicApiControllerInterceptor`1[[Project.QLBenhVien.Sessions.ISessionAppService, Project.QLBenhVien.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] could not be registered. There is already a component with that name. Did you want to modify the existing component instead? If not, make sure you specify a unique name.
+   at Castle.MicroKernel.SubSystems.Naming.DefaultNamingSubSystem.Register(IHandler handler)
+   at Castle.MicroKernel.DefaultKernel.AddCustomComponent(ComponentModel model)
+   at Castle.MicroKernel.Registration.ComponentRegistration`1.Castle.MicroKernel.Registration.IRegistration.Register(IKernelInternal kernel)
+   at Castle.MicroKernel.DefaultKernel.Register(IRegistration[] registrations)
+   at Castle.Windsor.WindsorContainer.Register(IRegistration[] registrations)
+   at Abp.WebApi.AbpWebApiModule.PostInitialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_2(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+Castle.MicroKernel.ComponentRegistrationException: Component Abp.WebApi.Controllers.Dynamic.Interceptors.AbpDynamicApiControllerInterceptor`1[[Project.QLBenhVien.Sessions.ISessionAppService, Project.QLBenhVien.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] could not be registered. There is already a component with that name. Did you want to modify the existing component instead? If not, make sure you specify a unique name.
+   at Castle.MicroKernel.SubSystems.Naming.DefaultNamingSubSystem.Register(IHandler handler)
+   at Castle.MicroKernel.DefaultKernel.AddCustomComponent(ComponentModel model)
+   at Castle.MicroKernel.Registration.ComponentRegistration`1.Castle.MicroKernel.Registration.IRegistration.Register(IKernelInternal kernel)
+   at Castle.MicroKernel.DefaultKernel.Register(IRegistration[] registrations)
+   at Castle.Windsor.WindsorContainer.Register(IRegistration[] registrations)
+   at Abp.WebApi.AbpWebApiModule.PostInitialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_2(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+DEBUG 2019-11-08 20:59:43,550 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-11-08 20:59:43,567 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2019-11-08 20:59:43,573 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.Web.QLBenhVienWebModule, Project.QLBenhVien.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:59:43,576 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.QLBenhVienDataModule, Project.QLBenhVien.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:59:43,576 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:59:43,576 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:59:43,577 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:59:43,577 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:59:43,577 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:59:43,577 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:59:43,578 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.QLBenhVienCoreModule, Project.QLBenhVien.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:59:43,578 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.QLBenhVienApplicationModule, Project.QLBenhVien.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:59:43,578 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:59:43,578 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.Api.QLBenhVienWebApiModule, Project.QLBenhVien.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:59:43,579 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:59:43,579 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:59:43,579 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:59:43,579 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:59:43,579 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:59:43,582 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2019-11-08 20:59:44,299 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 20:59:44,299 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 20:59:44,299 [1    ] o.Configuration.LanguageManagementConfig - Converted QLBenhVien (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 20:59:44,299 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 20:59:44,779 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Project.QLBenhVien.EntityFramework.QLBenhVienDbContext, Project.QLBenhVien.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 20:59:48,414 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-11-08 20:59:48,480 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-11-08 20:59:48,505 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-11-08 20:59:48,515 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: QLBenhVien
+DEBUG 2019-11-08 20:59:48,524 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-11-08 20:59:48,828 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2019-11-08 20:59:48,869 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 12 classes define auto mapping attributes
+DEBUG 2019-11-08 20:59:48,869 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-11-08 20:59:48,873 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-11-08 20:59:48,874 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Users.Dto.CreateUserDto
+DEBUG 2019-11-08 20:59:48,874 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Users.Dto.UpdateUserDto
+DEBUG 2019-11-08 20:59:48,874 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Users.Dto.UserDto
+DEBUG 2019-11-08 20:59:48,875 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Roles.Dto.PermissionDto
+DEBUG 2019-11-08 20:59:48,875 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-11-08 20:59:48,875 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.MultiTenancy.Dto.EditTenantDto
+DEBUG 2019-11-08 20:59:48,876 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.MultiTenancy.Dto.TenantDto
+DEBUG 2019-11-08 20:59:48,876 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.BenhNhans.DTO.CreateBenhNhanInput
+DEBUG 2019-11-08 20:59:48,876 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Web.Models.Account.TenantChangeViewModel
+DEBUG 2019-11-08 20:59:48,876 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2019-11-08 20:59:53,224 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2019-11-08 20:59:53,228 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2019-11-08 20:59:53,230 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2019-11-08 20:59:53,231 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2019-11-08 20:59:53,232 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2019-11-08 20:59:53,233 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2019-11-08 20:59:53,234 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.BenhNhans.IBenhNhanAppService' with service name 'app/benhNhan'.
+FATAL 2019-11-08 20:59:53,249 [1    ] Abp.AbpBootstrapper                      - Castle.MicroKernel.ComponentRegistrationException: Component Abp.WebApi.Controllers.Dynamic.Interceptors.AbpDynamicApiControllerInterceptor`1[[Project.QLBenhVien.BenhNhans.IBenhNhanAppService, Project.QLBenhVien.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] could not be registered. There is already a component with that name. Did you want to modify the existing component instead? If not, make sure you specify a unique name.
+   at Castle.MicroKernel.SubSystems.Naming.DefaultNamingSubSystem.Register(IHandler handler)
+   at Castle.MicroKernel.DefaultKernel.AddCustomComponent(ComponentModel model)
+   at Castle.MicroKernel.Registration.ComponentRegistration`1.Castle.MicroKernel.Registration.IRegistration.Register(IKernelInternal kernel)
+   at Castle.MicroKernel.DefaultKernel.Register(IRegistration[] registrations)
+   at Castle.Windsor.WindsorContainer.Register(IRegistration[] registrations)
+   at Abp.WebApi.AbpWebApiModule.PostInitialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_2(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+Castle.MicroKernel.ComponentRegistrationException: Component Abp.WebApi.Controllers.Dynamic.Interceptors.AbpDynamicApiControllerInterceptor`1[[Project.QLBenhVien.BenhNhans.IBenhNhanAppService, Project.QLBenhVien.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] could not be registered. There is already a component with that name. Did you want to modify the existing component instead? If not, make sure you specify a unique name.
+   at Castle.MicroKernel.SubSystems.Naming.DefaultNamingSubSystem.Register(IHandler handler)
+   at Castle.MicroKernel.DefaultKernel.AddCustomComponent(ComponentModel model)
+   at Castle.MicroKernel.Registration.ComponentRegistration`1.Castle.MicroKernel.Registration.IRegistration.Register(IKernelInternal kernel)
+   at Castle.MicroKernel.DefaultKernel.Register(IRegistration[] registrations)
+   at Castle.Windsor.WindsorContainer.Register(IRegistration[] registrations)
+   at Abp.WebApi.AbpWebApiModule.PostInitialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_2(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+DEBUG 2019-11-08 21:02:58,590 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-11-08 21:02:58,618 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2019-11-08 21:02:58,631 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.Web.QLBenhVienWebModule, Project.QLBenhVien.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:02:58,632 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.QLBenhVienDataModule, Project.QLBenhVien.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:02:58,632 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:02:58,633 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:02:58,633 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:02:58,633 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:02:58,633 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:02:58,633 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:02:58,633 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.QLBenhVienCoreModule, Project.QLBenhVien.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:02:58,634 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.QLBenhVienApplicationModule, Project.QLBenhVien.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:02:58,634 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:02:58,634 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.Api.QLBenhVienWebApiModule, Project.QLBenhVien.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:02:58,634 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:02:58,634 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:02:58,634 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:02:58,634 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:02:58,635 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:02:58,638 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2019-11-08 21:02:59,423 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 21:02:59,423 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 21:02:59,423 [1    ] o.Configuration.LanguageManagementConfig - Converted QLBenhVien (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 21:02:59,423 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 21:02:59,996 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Project.QLBenhVien.EntityFramework.QLBenhVienDbContext, Project.QLBenhVien.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:03:02,799 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-11-08 21:03:02,883 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-11-08 21:03:02,905 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-11-08 21:03:02,917 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: QLBenhVien
+DEBUG 2019-11-08 21:03:02,943 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-11-08 21:03:03,272 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2019-11-08 21:03:03,297 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 12 classes define auto mapping attributes
+DEBUG 2019-11-08 21:03:03,297 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-11-08 21:03:03,304 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-11-08 21:03:03,304 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Users.Dto.CreateUserDto
+DEBUG 2019-11-08 21:03:03,305 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Users.Dto.UpdateUserDto
+DEBUG 2019-11-08 21:03:03,305 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Users.Dto.UserDto
+DEBUG 2019-11-08 21:03:03,305 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Roles.Dto.PermissionDto
+DEBUG 2019-11-08 21:03:03,305 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-11-08 21:03:03,305 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.MultiTenancy.Dto.EditTenantDto
+DEBUG 2019-11-08 21:03:03,305 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.MultiTenancy.Dto.TenantDto
+DEBUG 2019-11-08 21:03:03,305 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.BenhNhans.DTO.CreateBenhNhanInput
+DEBUG 2019-11-08 21:03:03,305 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Web.Models.Account.TenantChangeViewModel
+DEBUG 2019-11-08 21:03:03,305 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2019-11-08 21:03:05,753 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2019-11-08 21:03:05,754 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2019-11-08 21:03:05,756 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2019-11-08 21:03:05,758 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2019-11-08 21:03:05,760 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2019-11-08 21:03:05,761 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2019-11-08 21:03:05,762 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.BenhNhans.IBenhNhanAppService' with service name 'app/benhNhan'.
+FATAL 2019-11-08 21:03:05,766 [1    ] Abp.AbpBootstrapper                      - Castle.MicroKernel.ComponentRegistrationException: Component Abp.WebApi.Controllers.Dynamic.Interceptors.AbpDynamicApiControllerInterceptor`1[[Project.QLBenhVien.Sessions.ISessionAppService, Project.QLBenhVien.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] could not be registered. There is already a component with that name. Did you want to modify the existing component instead? If not, make sure you specify a unique name.
+   at Castle.MicroKernel.SubSystems.Naming.DefaultNamingSubSystem.Register(IHandler handler)
+   at Castle.MicroKernel.DefaultKernel.AddCustomComponent(ComponentModel model)
+   at Castle.MicroKernel.Registration.ComponentRegistration`1.Castle.MicroKernel.Registration.IRegistration.Register(IKernelInternal kernel)
+   at Castle.MicroKernel.DefaultKernel.Register(IRegistration[] registrations)
+   at Castle.Windsor.WindsorContainer.Register(IRegistration[] registrations)
+   at Abp.WebApi.AbpWebApiModule.PostInitialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_2(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+Castle.MicroKernel.ComponentRegistrationException: Component Abp.WebApi.Controllers.Dynamic.Interceptors.AbpDynamicApiControllerInterceptor`1[[Project.QLBenhVien.Sessions.ISessionAppService, Project.QLBenhVien.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] could not be registered. There is already a component with that name. Did you want to modify the existing component instead? If not, make sure you specify a unique name.
+   at Castle.MicroKernel.SubSystems.Naming.DefaultNamingSubSystem.Register(IHandler handler)
+   at Castle.MicroKernel.DefaultKernel.AddCustomComponent(ComponentModel model)
+   at Castle.MicroKernel.Registration.ComponentRegistration`1.Castle.MicroKernel.Registration.IRegistration.Register(IKernelInternal kernel)
+   at Castle.MicroKernel.DefaultKernel.Register(IRegistration[] registrations)
+   at Castle.Windsor.WindsorContainer.Register(IRegistration[] registrations)
+   at Abp.WebApi.AbpWebApiModule.PostInitialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_2(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+DEBUG 2019-11-08 21:04:44,862 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-11-08 21:04:44,880 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2019-11-08 21:04:44,889 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.Web.QLBenhVienWebModule, Project.QLBenhVien.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:04:44,891 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.QLBenhVienDataModule, Project.QLBenhVien.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:04:44,892 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:04:44,892 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:04:44,892 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:04:44,892 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:04:44,893 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:04:44,893 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:04:44,893 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.QLBenhVienCoreModule, Project.QLBenhVien.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:04:44,894 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.QLBenhVienApplicationModule, Project.QLBenhVien.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:04:44,894 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:04:44,894 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.Api.QLBenhVienWebApiModule, Project.QLBenhVien.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:04:44,894 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:04:44,894 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:04:44,894 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:04:44,894 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:04:44,894 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:04:44,899 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2019-11-08 21:04:45,631 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 21:04:45,631 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 21:04:45,631 [1    ] o.Configuration.LanguageManagementConfig - Converted QLBenhVien (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 21:04:45,631 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 21:04:46,070 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Project.QLBenhVien.EntityFramework.QLBenhVienDbContext, Project.QLBenhVien.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:04:49,419 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-11-08 21:04:49,485 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-11-08 21:04:49,503 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-11-08 21:04:49,512 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: QLBenhVien
+DEBUG 2019-11-08 21:04:49,519 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-11-08 21:04:49,693 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2019-11-08 21:04:49,717 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 12 classes define auto mapping attributes
+DEBUG 2019-11-08 21:04:49,717 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-11-08 21:04:49,720 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-11-08 21:04:49,721 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Users.Dto.CreateUserDto
+DEBUG 2019-11-08 21:04:49,721 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Users.Dto.UpdateUserDto
+DEBUG 2019-11-08 21:04:49,721 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Users.Dto.UserDto
+DEBUG 2019-11-08 21:04:49,721 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Roles.Dto.PermissionDto
+DEBUG 2019-11-08 21:04:49,722 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-11-08 21:04:49,722 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.MultiTenancy.Dto.EditTenantDto
+DEBUG 2019-11-08 21:04:49,722 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.MultiTenancy.Dto.TenantDto
+DEBUG 2019-11-08 21:04:49,722 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.BenhNhans.DTO.CreateBenhNhanInput
+DEBUG 2019-11-08 21:04:49,722 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Web.Models.Account.TenantChangeViewModel
+DEBUG 2019-11-08 21:04:49,722 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2019-11-08 21:04:53,513 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2019-11-08 21:04:53,514 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2019-11-08 21:04:53,515 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2019-11-08 21:04:53,516 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2019-11-08 21:04:53,518 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2019-11-08 21:04:53,518 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2019-11-08 21:04:53,519 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.BenhNhans.IBenhNhanAppService' with service name 'app/benhNhan'.
+FATAL 2019-11-08 21:04:53,523 [1    ] Abp.AbpBootstrapper                      - Castle.MicroKernel.ComponentRegistrationException: Component Abp.WebApi.Controllers.Dynamic.Interceptors.AbpDynamicApiControllerInterceptor`1[[Project.QLBenhVien.Sessions.ISessionAppService, Project.QLBenhVien.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] could not be registered. There is already a component with that name. Did you want to modify the existing component instead? If not, make sure you specify a unique name.
+   at Castle.MicroKernel.SubSystems.Naming.DefaultNamingSubSystem.Register(IHandler handler)
+   at Castle.MicroKernel.DefaultKernel.AddCustomComponent(ComponentModel model)
+   at Castle.MicroKernel.Registration.ComponentRegistration`1.Castle.MicroKernel.Registration.IRegistration.Register(IKernelInternal kernel)
+   at Castle.MicroKernel.DefaultKernel.Register(IRegistration[] registrations)
+   at Castle.Windsor.WindsorContainer.Register(IRegistration[] registrations)
+   at Abp.WebApi.AbpWebApiModule.PostInitialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_2(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+Castle.MicroKernel.ComponentRegistrationException: Component Abp.WebApi.Controllers.Dynamic.Interceptors.AbpDynamicApiControllerInterceptor`1[[Project.QLBenhVien.Sessions.ISessionAppService, Project.QLBenhVien.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] could not be registered. There is already a component with that name. Did you want to modify the existing component instead? If not, make sure you specify a unique name.
+   at Castle.MicroKernel.SubSystems.Naming.DefaultNamingSubSystem.Register(IHandler handler)
+   at Castle.MicroKernel.DefaultKernel.AddCustomComponent(ComponentModel model)
+   at Castle.MicroKernel.Registration.ComponentRegistration`1.Castle.MicroKernel.Registration.IRegistration.Register(IKernelInternal kernel)
+   at Castle.MicroKernel.DefaultKernel.Register(IRegistration[] registrations)
+   at Castle.Windsor.WindsorContainer.Register(IRegistration[] registrations)
+   at Abp.WebApi.AbpWebApiModule.PostInitialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_2(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+DEBUG 2019-11-08 21:09:13,449 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-11-08 21:09:13,465 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2019-11-08 21:09:13,473 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.Web.QLBenhVienWebModule, Project.QLBenhVien.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:09:13,477 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.QLBenhVienDataModule, Project.QLBenhVien.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:09:13,477 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:09:13,478 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:09:13,478 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:09:13,478 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:09:13,478 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:09:13,478 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:09:13,479 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.QLBenhVienCoreModule, Project.QLBenhVien.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:09:13,479 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.QLBenhVienApplicationModule, Project.QLBenhVien.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:09:13,479 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:09:13,479 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.Api.QLBenhVienWebApiModule, Project.QLBenhVien.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:09:13,480 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:09:13,480 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:09:13,480 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:09:13,480 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:09:13,480 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:09:13,484 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2019-11-08 21:09:14,330 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 21:09:14,330 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 21:09:14,330 [1    ] o.Configuration.LanguageManagementConfig - Converted QLBenhVien (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 21:09:14,330 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 21:09:14,812 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Project.QLBenhVien.EntityFramework.QLBenhVienDbContext, Project.QLBenhVien.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:09:18,811 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-11-08 21:09:18,901 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-11-08 21:09:18,933 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-11-08 21:09:18,945 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: QLBenhVien
+DEBUG 2019-11-08 21:09:18,955 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-11-08 21:09:19,266 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2019-11-08 21:09:19,305 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 12 classes define auto mapping attributes
+DEBUG 2019-11-08 21:09:19,305 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-11-08 21:09:19,312 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-11-08 21:09:19,313 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Users.Dto.CreateUserDto
+DEBUG 2019-11-08 21:09:19,313 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Users.Dto.UpdateUserDto
+DEBUG 2019-11-08 21:09:19,313 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Users.Dto.UserDto
+DEBUG 2019-11-08 21:09:19,313 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Roles.Dto.PermissionDto
+DEBUG 2019-11-08 21:09:19,314 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-11-08 21:09:19,314 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.MultiTenancy.Dto.EditTenantDto
+DEBUG 2019-11-08 21:09:19,314 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.MultiTenancy.Dto.TenantDto
+DEBUG 2019-11-08 21:09:19,314 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.BenhNhans.DTO.CreateBenhNhanInput
+DEBUG 2019-11-08 21:09:19,314 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Web.Models.Account.TenantChangeViewModel
+DEBUG 2019-11-08 21:09:19,314 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2019-11-08 21:09:23,838 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2019-11-08 21:09:23,846 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2019-11-08 21:09:23,850 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2019-11-08 21:09:23,851 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2019-11-08 21:09:23,852 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2019-11-08 21:09:23,853 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2019-11-08 21:09:23,854 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.BenhNhans.IBenhNhanAppService' with service name 'app/benhNhan'.
+WARN  2019-11-08 21:09:30,883 [5    ] Abp.Logging.LogHelper                    - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+DEBUG 2019-11-08 21:14:28,124 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-11-08 21:14:28,140 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2019-11-08 21:14:28,153 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.Web.QLBenhVienWebModule, Project.QLBenhVien.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:14:28,154 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.QLBenhVienDataModule, Project.QLBenhVien.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:14:28,155 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:14:28,155 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:14:28,155 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:14:28,155 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:14:28,155 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:14:28,155 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:14:28,156 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.QLBenhVienCoreModule, Project.QLBenhVien.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:14:28,156 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.QLBenhVienApplicationModule, Project.QLBenhVien.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:14:28,156 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:14:28,156 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Project.QLBenhVien.Api.QLBenhVienWebApiModule, Project.QLBenhVien.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:14:28,156 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:14:28,156 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:14:28,156 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:14:28,156 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:14:28,157 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:14:28,163 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2019-11-08 21:14:28,732 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 21:14:28,732 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 21:14:28,732 [1    ] o.Configuration.LanguageManagementConfig - Converted QLBenhVien (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 21:14:28,732 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-08 21:14:29,156 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Project.QLBenhVien.EntityFramework.QLBenhVienDbContext, Project.QLBenhVien.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-08 21:14:34,308 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-11-08 21:14:34,378 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-11-08 21:14:34,398 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-11-08 21:14:34,405 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: QLBenhVien
+DEBUG 2019-11-08 21:14:34,413 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-11-08 21:14:34,632 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2019-11-08 21:14:34,682 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 12 classes define auto mapping attributes
+DEBUG 2019-11-08 21:14:34,682 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-11-08 21:14:34,686 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-11-08 21:14:34,686 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Users.Dto.CreateUserDto
+DEBUG 2019-11-08 21:14:34,687 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Users.Dto.UpdateUserDto
+DEBUG 2019-11-08 21:14:34,687 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Users.Dto.UserDto
+DEBUG 2019-11-08 21:14:34,687 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Roles.Dto.PermissionDto
+DEBUG 2019-11-08 21:14:34,687 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-11-08 21:14:34,687 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.MultiTenancy.Dto.EditTenantDto
+DEBUG 2019-11-08 21:14:34,687 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.MultiTenancy.Dto.TenantDto
+DEBUG 2019-11-08 21:14:34,687 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.BenhNhans.DTO.CreateBenhNhanInput
+DEBUG 2019-11-08 21:14:34,687 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Web.Models.Account.TenantChangeViewModel
+DEBUG 2019-11-08 21:14:34,687 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Project.QLBenhVien.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2019-11-08 21:14:39,895 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2019-11-08 21:14:39,897 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2019-11-08 21:14:39,898 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2019-11-08 21:14:39,899 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2019-11-08 21:14:39,902 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2019-11-08 21:14:39,903 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2019-11-08 21:14:39,904 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Project.QLBenhVien.BenhNhans.IBenhNhanAppService' with service name 'app/benhNhan'.
+WARN  2019-11-08 21:14:46,764 [11   ] Abp.Logging.LogHelper                    - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+DEBUG 2019-11-08 21:15:14,780 [18   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"2e296e3a-d1fb-401e-be64-48e8c7055826","IpAddress":"192.168.1.43","TenantId":null,"UserId":1,"ConnectTime":"2019-11-08T21:15:14.7726355+07:00","Properties":{}}
+DEBUG 2019-11-08 21:15:14,829 [18   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 2e296e3a-d1fb-401e-be64-48e8c7055826
+WARN  2019-11-08 21:15:18,337 [18   ] naries.DictionaryBasedLocalizationSource - Can not find 'BenhNhan' in localization source 'QLBenhVien'!
+DEBUG 2019-11-08 21:15:26,236 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 2e296e3a-d1fb-401e-be64-48e8c7055826
+WARN  2019-11-08 21:15:28,306 [18   ] naries.DictionaryBasedLocalizationSource - Can not find 'BenhNhan' in localization source 'QLBenhVien'!
+DEBUG 2019-11-08 21:15:28,911 [16   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"e9723786-761f-4079-83b4-1c0b064d9270","IpAddress":"192.168.1.43","TenantId":null,"UserId":1,"ConnectTime":"2019-11-08T21:15:28.9113731+07:00","Properties":{}}
+DEBUG 2019-11-08 21:15:28,937 [8    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: e9723786-761f-4079-83b4-1c0b064d9270
+DEBUG 2019-11-08 21:15:45,053 [18   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: e9723786-761f-4079-83b4-1c0b064d9270
+WARN  2019-11-08 21:16:06,936 [27   ] naries.DictionaryBasedLocalizationSource - Can not find 'BenhNhan' in localization source 'QLBenhVien'!
+DEBUG 2019-11-08 21:16:08,457 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"86195b63-5972-4be3-b0dd-2b119495f080","IpAddress":"192.168.1.43","TenantId":null,"UserId":1,"ConnectTime":"2019-11-08T21:16:08.4572983+07:00","Properties":{}}
+DEBUG 2019-11-08 21:16:08,464 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 86195b63-5972-4be3-b0dd-2b119495f080

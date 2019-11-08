@@ -4,7 +4,9 @@ using System.Web.Http;
 using Abp.Application.Services;
 using Abp.Configuration.Startup;
 using Abp.Modules;
+using Abp.Web;
 using Abp.WebApi;
+using Project.QLBenhVien.BenhNhans;
 using Swashbuckle.Application;
 
 namespace Project.QLBenhVien.Api
@@ -18,6 +20,18 @@ namespace Project.QLBenhVien.Api
 
             Configuration.Modules.AbpWebApi().DynamicApiControllerBuilder
                 .ForAll<IApplicationService>(typeof(QLBenhVienApplicationModule).Assembly, "app")
+                .Build();
+
+            Configuration.Modules.AbpWebApi().DynamicApiControllerBuilder
+                .ForAll<IApplicationService>(Assembly.GetAssembly(typeof(QLBenhVienApplicationModule)), "app")
+                .Build();
+            Configuration.Modules.AbpWebApi().DynamicApiControllerBuilder
+                .For<IBenhNhanAppService>("app/benhNhan")
+                .ForMethod("Create").DontCreateAction().Build();
+
+            Configuration.Modules.AbpWebApi().DynamicApiControllerBuilder
+                .For<IBenhNhanAppService>("app/benhNhan")
+                .ForMethod("ListAll").WithVerb(HttpVerb.Get)
                 .Build();
 
             Configuration.Modules.AbpWebApi().HttpConfiguration.Filters.Add(new HostAuthenticationFilter("Bearer"));

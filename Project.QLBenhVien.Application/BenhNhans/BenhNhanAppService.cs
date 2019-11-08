@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Mvc;
 
 namespace Project.QLBenhVien.BenhNhans
 {
@@ -18,18 +19,21 @@ namespace Project.QLBenhVien.BenhNhans
             _benhNhanManager = benhNhanManager;
         }
         [Obsolete]
+        [HttpPost]
         public async Task Create(CreateBenhNhanInput input)
         {
             BenhNhan output = Mapper.Map<CreateBenhNhanInput, BenhNhan>(input);
             await _benhNhanManager.Create(output);
         }
         [Obsolete]
+        [HttpDelete]
         public void Delete(DeleteBenhNhanInput input)
         {
             _benhNhanManager.Delete(input.Id);
         }
 
         [Obsolete]
+        [HttpGet]
         public GetBenhNhanOutput GetBenhNhanById(GetBenhNhanInput input)
         {
             var getBenhNhan = _benhNhanManager.GetBenhNhanByID(input.Id);
@@ -37,6 +41,7 @@ namespace Project.QLBenhVien.BenhNhans
             return output;
         }
         [Obsolete]
+        [HttpGet]
         public IEnumerable<GetBenhNhanOutput> ListAll()
         {
             var getAll = _benhNhanManager.GetAllList().ToList();
@@ -44,6 +49,7 @@ namespace Project.QLBenhVien.BenhNhans
             return output;
         }
         [Obsolete]
+        [HttpPut]
         public void Update(UpdateBenhNhanInput input)
         {
             BenhNhan ouput = Mapper.Map<UpdateBenhNhanInput, BenhNhan>(input);
