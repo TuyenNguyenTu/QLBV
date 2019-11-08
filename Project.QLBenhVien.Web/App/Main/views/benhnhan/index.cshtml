@@ -1,0 +1,60 @@
+﻿<div class="row clearfix">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="card main-content">
+            @*<div class="header">
+                    <h2>
+                        @L("Tenants")
+                    </h2>
+                    <ul class="header-dropdown m-r--5">
+                        <i class="fa fa-spin fa-spinner" ng-if="isTableLoading"></i>
+                        <li class="dropdown">
+                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">more_vert</i>
+                            </a>
+                            <ul class="dropdown-menu pull-right">
+                                <li><a href="javascript:void(0);" class="waves-effect waves-block()" ng-click="vm.refresh();"><i class="material-icons">refresh</i>Refresh</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>*@
+            <h2>@L("BenhNhan")</h2>
+            <button ng-click="vm.click()" value="test">Hello</button>
+            <div class="body table-responsive">
+                <table class="table table-hover table-striped">
+                    <thead>
+                        <tr>
+                            <th>Họ</th>
+                            <th>Tên</th>
+                            <th>CMND</th>
+                            <th>Giới Tính</th>
+                            <th>Địa chỉ</th>
+                            <th>@L("Actions")</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="benhNhan in vm.benhNhans">
+                            <td>{{benhNhan.ho}}</td>
+                            <td>{{benhNhan.ten}}</td>
+                            <td>{{benhNhan.cmnd}}</td>
+                            <td>{{benhNhan.gioiTinh}}</td>
+                            <td>{{benhNhan.diaChi}}</td>
+                            <td class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <i class="material-icons">menu</i>
+                                </a>
+                                <ul class="dropdown-menu pull-right">
+                                    <li><a href="javascript:void(0);" class="waves-effect waves-block" ng-click="vm.openBenhNhanEditModal(tenant)"><i class="material-icons">create</i>Edit</a></li>
+                                    <li><a href="javascript:void(0);" class="waves-effect waves-block" ng-click="vm.delete(tenant)"><i class="material-icons">delete_sweep</i>Delete</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                @*<button type="button" data-toggle="modal" class="btn btn-primary btn-circle waves-effect waves-circle waves-float pull-right" ng-click="vm.openTenantCreationModal()">
+                    <i class="material-icons">add</i>
+                </button>*@
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+﻿<script src="~/Scripts/angular.js"></script>
+<script>
+    var app = angular.module("Myapp", []);
+    app.controller("Mycontroller", function ($scope, $http) {
+        $http({
+            method: 'GET',
+            url: 'BenhNhan/GetBenhNhan'
+        }).then(function (result) {
+            $scope.GetBenhNhanDetails = result.data;
+        })
+    });
+</script>
+<div ng-app="Myapp" ng-controller="Mycontroller">
+    <table border="1">
+        <tr>
+            <th>Họ</th>
+            <th>Tên</th>
+            <th>CMND</th>
+            <th>Giới Tính</th>
+        </tr>
+        <tr ng-repeat="x in GetBenhNhanDetails">
+            <td>{{x.ho}}</td>
+            <td>{{x.ten}}</td>
+            <td>{{x.cmnd}}</td>
+            <td>{{x.gioiTinh}}</td>
+        </tr>
+    </table>
+</div>
