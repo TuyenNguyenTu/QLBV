@@ -20,19 +20,22 @@
 
             //vm.openModalCreateOrEditBenhNhan = function () {
             //    var modalInstance = $uibModal.open({
-            //        templateUrl: '~/App/Main/views/benhnhan/createOrEditBenhNhan.cshtml',
-            //        controller: 'Main.views.benhnhan.createOrEditBenhNhan as vm',
+            //        templateUrl: '/App/Main/views/benhnhan/createOrEditModalBenhNhan.cshtml',
+            //        controller: 'Main.views.benhnhan.createOrEditModalBenhNhan as vm',
             //        backdrop: 'static'
             //    });
             //    modalInstance.result.then(function () {
             //        getDSBenhNhans();
-            //    })
+            //    });
+            //    modalInstance.result.then(function () {
+            //        getDSBenhNhans();
+            //    });
             //}
 
             vm.openBenhNhanCreationModal = function () {
                 var modalInstance = $uibModal.open({
-                    templateUrl: '~/App/Main/views/benhnhan/createModal.cshtml',
-                    controller: 'app.main.views.benhnhan.createModal as vm',
+                    templateUrl: '/App/Main/views/benhnhan/createOrEditModalBenhNhan.cshtml',
+                    controller: 'app.main.views.benhnhan.createOrEditModalBenhNhan as vm',
                     backdrop: 'static'
                 });
                 modalInstance.rendered.then(function () {
@@ -47,11 +50,12 @@
 
             vm.openBenhNhanEditModal = function (benhNhan) {
                 var modalInstance = $uibModal.open({
-                    templateUrl: '/App/Main/views/benhNhan/EditModal.cshtml', // path đến file cshtml
-                    controller: 'app.main.views.benhNhan.EditModal as vm', //path đến file js
+                    templateUrl: '/App/Main/views/benhnhan/createOrEditModalBenhNhan.cshtml', // path đến file cshtml
+                    controller: 'app.main.views.benhNhan.createOrEditModalBenhNhan as vm', //path đến file js
                     backdrop: 'static',
                     resolve: {
                         id: function () {
+                            console.log(benhNhan.id);
                             return benhNhan.id;
                         }
                     }
@@ -69,18 +73,17 @@
 
 
             vm.delete = function (benhNhan) {
-                alert("DELETE BENH NHAN")
-                //abp.message.confirm(
-                //    "Delete user '" + benhNhan.userName + "'?",
-                //    function (result) {
-                //        if (result) {
-                //            benhNhanService.delete({ id: benhNhan.id })
-                //                .then(function () {
-                //                    abp.notify.info("Deleted user: " + benhNhan.userName);
-                //                    getDSBenhNhans();
-                //                });
-                //        }
-                //    });
+                abp.message.confirm(
+                    "Xóa bệnh nhân '" + benhNhan.ho +" "+ benhNhan.ten + "'?",
+                    function (result) {
+                        if (result) {
+                            benhNhanService.delete({ id: benhNhan.id })
+                                .then(function () {
+                                    abp.notify.info("Đã xóa thông tin bệnh nhân : " + benhNhan.ho +" " + benhNhan.ten);
+                                    getDSBenhNhans();
+                                });
+                        }
+                    });
             }
 
             vm.refresh = function () {
