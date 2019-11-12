@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Project.QLBenhVien.BenhNhans.DTO
 {
-    [AutoMapFrom(typeof(BenhNhan))]
+    [AutoMapTo(typeof(BenhNhan))]
     public class CreateBenhNhanInput
     {
         public string Ho { set; get; }

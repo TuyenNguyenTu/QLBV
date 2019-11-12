@@ -1,17 +1,109 @@
-﻿@{
-    Layout = null;
-}
-
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title></title>
-</head>
-<body>
-    <div>
-    
+﻿<form id="frm_create_user" name="userCreateForm" novalidate>
+    <div class="modal-header">
+        <button type="button" class="close" ng-click="vm.cancel()" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title">
+            <span>Thêm mới bệnh nhân</span>
+        </h4>
     </div>
-</body>
-</html>
+    <div class="modal-body">
+        <uib-tabset class="tab-container tabbable-line">
+            <uib-tab heading="User Details">
+                <div class="row clearfix" style="margin-top:10px;">
+                    <div class="col-sm-12">
+                        <div class="form-group form-float">
+                            <div class="form-line">
+                                <input id="ho" type="text" name="UserName" ng-model="vm.benhNhan.ho" required maxlength="32" minlength="2" class="validate form-control">
+                                <label for="username" class="form-label">Họ</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row clearfix">
+                    <div class="col-sm-6">
+                        <div class="form-group form-float">
+                            <div class="form-line">
+                                <input id="name" type="text" name="Name" ng-model="vm.benhNhan.ten" required maxlength="32" class="validate form-control">
+                                <label for="name" class="form-label">Tên</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group form-float">
+                            <div class="form-line">
+                                <input id="surname" type="text" name="Surname" ng-model="vm.benhNhan.cmnd" required maxlength="32" class="validate form-control">
+                                <label for="surname" class="form-label">CMND</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row clearfix">
+                    <div class="col-sm-12">
+                        <div class="form-group form-float">
+                            <div class="form-line">
+                                <input id="email" type="email" name="EmailAddress" ng-model="vm.benhNhan.gioiTinh" maxlength="256" class="validate form-control">
+                                <label for="email" class="form-label">Giới Tính</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row clearfix">
+                    <div class="col-sm-12">
+                        <div class="form-group form-float">
+                            <div class="form-line">
+                                <input id="diachi" type="text" name="Password" ng-model="vm.benhNhan.diaChi" required maxlength="32" class="validate form-control">
+                                <label for="password" class="form-label">Địa Chỉ</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row clearfix">
+                    <div class="col-sm-12">
+                        <div class="form-group form-float">
+                            <div class="form-line">
+                                <input id="sdt" type="text" name="sdt" class="validate form-control" ng-model="vm.benhNhan.sdt" equalTo="#password" data-msg-equalto="Please enter the same password again." required maxlength="32">
+                                <label for="confirmpassword" class="form-label">Số Điện Thoại</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row clearfix">
+                    <div class="col-sm-12">
+                        <div class="form-group form-float">
+                            <div class="form-line">
+                                <input id="sdt" type="text" name="sdt" class="validate form-control" ng-model="vm.benhNhan.ngaySinh" equalTo="#password" data-msg-equalto="Please enter the same password again." required maxlength="32">
+                                <label for="confirmpassword" class="form-label">Ngày Sinh</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </uib-tab>
+            @*<uib-tab heading="User Roles">
+                <div class="row">
+                    <div class="col-sm-12 ">
+                        <div class="col-sm-6" ng-repeat="role in vm.roles">
+                            <input type="checkbox" name="role" value="{{role.name}}" title="{{role.description}}" class="filled-in" id="role-{{role.id}}" checked="checked" ng-model="role.isAssigned" />
+                            <label for="role-{{role.id}}" title="{{role.displayName}}">{{role.name}}</label>
+                        </div>
+                    </div>
+                </div>
+            </uib-tab>*@
+        </uib-tabset>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default waves-effect" ng-click="vm.cancel()">
+            Cancel
+        </button>
+        <button type="submit" class="btn btn-primary waves-effect" ng-click="vm.save()" ng-disabled="userCreateForm.$invalid">
+            Save
+        </button>
+    </div>
+
+</form>

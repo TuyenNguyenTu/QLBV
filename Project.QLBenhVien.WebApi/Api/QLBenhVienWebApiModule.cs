@@ -31,7 +31,7 @@ namespace Project.QLBenhVien.Api
 
             Configuration.Modules.AbpWebApi().DynamicApiControllerBuilder
                 .For<IBenhNhanAppService>("app/benhNhan")
-                .ForMethod("ListAll").WithVerb(HttpVerb.Get)
+                .ForMethod("ListAll").WithVerb(HttpVerb.Post)
                 .ForMethod("Update").WithVerb(HttpVerb.Put)
                 .ForMethod("Delete").WithVerb(HttpVerb.Delete)
                 .ForMethod("GetBenhNhanById").WithVerb(HttpVerb.Get)
