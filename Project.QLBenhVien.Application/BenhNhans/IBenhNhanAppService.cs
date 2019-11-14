@@ -13,9 +13,9 @@ namespace Project.QLBenhVien.BenhNhans
     {
         [HttpGet]
         IEnumerable<GetBenhNhanOutput> ListAll();
-        [HttpPost]
+        [HttpGet]
         Task Create(CreateBenhNhanInput input);
-        [HttpPut]
+        [HttpGet]
         void Update(UpdateBenhNhanInput input);
         [HttpDelete]
         void Delete(DeleteBenhNhanInput input);

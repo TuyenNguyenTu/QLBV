@@ -16,8 +16,8 @@ namespace Project.QLBenhVien.Api
     {
         public override void Initialize()
         {
+          //  Configuration.Modules.AbpWebCommon().SendAllExceptionsToClients = true;
             IocManager.RegisterAssemblyByConvention(Assembly.GetExecutingAssembly());
-
             Configuration.Modules.AbpWebApi().DynamicApiControllerBuilder
                 .ForAll<IApplicationService>(typeof(QLBenhVienApplicationModule).Assembly, "app")
                 .Build();
@@ -32,8 +32,9 @@ namespace Project.QLBenhVien.Api
             Configuration.Modules.AbpWebApi().DynamicApiControllerBuilder
                 .For<IBenhNhanAppService>("app/benhNhan")
                 .ForMethod("ListAll").WithVerb(HttpVerb.Post)
-                .ForMethod("Update").WithVerb(HttpVerb.Put)
+                .ForMethod("Update").WithVerb(HttpVerb.Get)
                 .ForMethod("Delete").WithVerb(HttpVerb.Get)
+                .ForMethod("Create").WithVerb(HttpVerb.Get)
                 .ForMethod("GetBenhNhanById").WithVerb(HttpVerb.Get)
                 .Build();
             //Configuration.Modules.AbpWebApi().DynamicApiControllerBuilder

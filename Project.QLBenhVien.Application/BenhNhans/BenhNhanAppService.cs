@@ -19,7 +19,7 @@ namespace Project.QLBenhVien.BenhNhans
             _benhNhanManager = benhNhanManager;
         }
         [Obsolete]
-        [HttpPost]
+        [HttpGet]
         public async Task Create(CreateBenhNhanInput input)
         {
             BenhNhan output = Mapper.Map<CreateBenhNhanInput, BenhNhan>(input);
@@ -49,7 +49,7 @@ namespace Project.QLBenhVien.BenhNhans
             return output;
         }
         [Obsolete]
-        [HttpPut]
+        [HttpGet]
         public void Update(UpdateBenhNhanInput input)
         {
             BenhNhan ouput = Mapper.Map<UpdateBenhNhanInput, BenhNhan>(input);

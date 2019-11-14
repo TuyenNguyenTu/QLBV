@@ -1,4 +1,51 @@
-﻿<div class="row clearfix" >
+﻿<!--Modal-->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Họ:</label>
+                        <input type="text" class="form-control" id="recipient-name" name="ho" ng-model="vm.benhNhan.ho">
+                    </div>
+                    <div class="form-group">
+                        <label for="message-text" class="col-form-label">Tên:</label>
+                        <textarea class="form-control" id="message-text" name="ten" ng-model="vm.benhNhan.ten"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="message-text" class="col-form-label">CMND:</label>
+                        <textarea class="form-control" id="message-text" name="cmnd" ng-model="vm.benhNhan.cmnd"></textarea>
+                    </div> 
+                    <div class="form-group">
+                        <label for="message-text" class="col-form-label">Giới Tính:</label>
+                        <textarea class="form-control" id="message-text" name="gioiTinh" ng-model="vm.benhNhan.gioiTinh"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="message-text" class="col-form-label">Địa Chỉ:</label>
+                        <textarea class="form-control" id="message-text" name="diaChi" ng-model="vm.benhNhan.diaChi"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="message-text" class="col-form-label">SĐT:</label>
+                        <textarea class="form-control" id="message-text" name="sdt" ng-model="vm.benhNhan.soDienThoai"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" ng-click="vm.save(vm)" ng-show="vm.showSubmit">Submit</button>
+                <button type="button" class="btn btn-primary" ng-click="vm.edit(vm)" ng-show="vm.showEdit">Edit</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Display-->
+<div class="row clearfix" >
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <div class="card main-content">
             <div class="header">
@@ -28,6 +75,7 @@
                             <th>CMND</th>
                             <th>Giới Tính</th>
                             <th>Địa chỉ</th>
+                            <th>SĐT</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
@@ -38,6 +86,7 @@
                             <td>{{benhNhan.cmnd}}</td>
                             <td>{{benhNhan.gioiTinh}}</td>
                             <td>{{benhNhan.diaChi}}</td>
+                            <td>{{benhNhan.soDienThoai}}</td>
                             <td class="dropdown">
                                 <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                     <i class="material-icons">menu</i>

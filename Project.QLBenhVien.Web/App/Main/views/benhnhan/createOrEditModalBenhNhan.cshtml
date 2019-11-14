@@ -1,1 +1,59 @@
-﻿<h1>Hello</h1>
+﻿<div>
+    <form name="tenantCreateForm" novalidate>
+
+        <div class="modal-header">
+            <button type="button" class="close" aria-label="Close" ng-click="vm.cancel()">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title">
+                <span>@L("CreateNewTenant")</span>
+            </h4>
+        </div>
+
+        <div class="modal-body">
+            <div class="form-group form-float">
+                <div class="form-line">
+                    <input class="form-control" type="text" name="ho" ng-model="vm.benhNhan.ho" required maxlength="64" minlength="2">
+                    <label class="form-label">Họ</label>
+                </div>
+            </div>
+            <div class="form-group form-float">
+                <div class="form-line">
+                    <input type="text" name="Name" class="form-control" ng-model="vm.benhNhan.ten" required maxlength="128">
+                    <label class="form-label">Tên</label>
+                </div>
+            </div>
+            <div class="form-group form-float">
+                <div class="form-line">
+                    <input id="txtCmnd" type="text" name="cmnd" ng-model="vm.benhNhan.cmnd" checked class="form-control" />
+                    <label class="form-label">CMND</label>
+                </div>
+            </div>
+            <div class="form-group form-float">
+                <div class="form-line">
+                    <input id="txtGender" type="text" name="gender" ng-model="vm.benhNhan.gioiTinh" checked class="form-control" />
+                    <label  class="form-label">Giới tính</label>
+                </div>
+            </div>
+            <div class="form-group form-float">
+                <div class="form-line">
+                    <input id="txtDiaChi" type="text" name="diachi" ng-model="vm.benhNhan.diaChi" checked class="form-control" />
+                    <label  class="form-label">Địa chỉ</label>
+                </div>
+            </div>
+            <div class="form-group form-float">
+                <div class="form-line">
+                    <input id="txtSDT" type="text" name="sdt" ng-model="vm.benhNhan.sdt" checked class="form-control" />
+                    <label  class="form-label">Số điện thoại</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" ng-click="vm.cancel()">Cancel</button>
+            <button type="submit" class="btn btn-primary blue" ng-click="vm.save()" ng-disabled="modal.$invalid">Save</button>
+            <button type="submit" class="btn btn-primary blue" ng-click="vm.edit()" ng-disabled="modal.$invalid">Edit</button>
+        </div>
+
+    </form>
+</div>
