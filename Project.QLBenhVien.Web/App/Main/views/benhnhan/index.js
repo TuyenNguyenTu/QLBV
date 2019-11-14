@@ -105,7 +105,7 @@
             //update data
             vm.edit = function (data) {
                 var x = {};
-                x = data;
+                x = vm.entity;
                 x.ho = data.benhNhan.ho;
                 x.ten = data.benhNhan.ten;
                 x.cmnd = data.benhNhan.cmnd;
