@@ -99,7 +99,7 @@
                 benhNhanService.create(vm.benhNhan)
                     .then(function () {
                         abp.notify.info(App.localize('Saved Successfully'));
-                        $uibModalInstance.close();
+                        $('#exampleModal').modal('hide');
                     }).finally(function () {
                         abp.ui.clearBusy();
                         getDSBenhNhans();
@@ -121,7 +121,7 @@
                 benhNhanService.update(x)
                     .then(function () {
                         abp.notify.info(App.localize('Saved Successfully'));
-                        $uibModalInstance.close();
+                        $('#exampleModal').modal('hide');
                     }).finally(function () {
                         abp.ui.clearBusy();
                         getDSBenhNhans();
