@@ -34,6 +34,10 @@
                         <label for="message-text" class="col-form-label">SĐT:</label>
                         <textarea class="form-control" id="message-text" name="sdt" ng-model="vm.benhNhan.soDienThoai"></textarea>
                     </div>
+                    <div class="form-group">
+                        <label for="message-text" class="col-form-label">Ngày sinh:</label>
+                        <textarea class="form-control" id="message-text" name="ns" ng-model="vm.benhNhan.ngaySinh"></textarea>
+                    </div>
                 </form>
             </div>
             <div class="modal-footer">
@@ -64,7 +68,7 @@
                         </li>
                     </ul>
                 </div>
-            <button ng-click="vm.click()" value="test">Hello</button>
+            @*<button ng-click="vm.click()" value="test">Hello</button>*@
             
             <div class="body table-responsive">
                 <table class="table table-hover table-striped">
@@ -76,6 +80,7 @@
                             <th>Giới Tính</th>
                             <th>Địa chỉ</th>
                             <th>SĐT</th>
+                            <th>Ngày Sinh</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
@@ -87,6 +92,7 @@
                             <td>{{benhNhan.gioiTinh}}</td>
                             <td>{{benhNhan.diaChi}}</td>
                             <td>{{benhNhan.soDienThoai}}</td>
+                            <td>{{benhNhan.ngaySinh|date:'dd-MM-yyyy'}}</td>
                             <td class="dropdown">
                                 <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                     <i class="material-icons">menu</i>

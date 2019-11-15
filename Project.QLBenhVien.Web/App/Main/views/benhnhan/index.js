@@ -12,6 +12,7 @@
 
             vm.showSubmit = true;
             vm.showEdit = false;
+            // model
             vm.benhNhan = {
                 ho:'',
                 ten:'',
@@ -52,6 +53,7 @@
                 vm.benhNhan.gioiTinh = '';
                 vm.benhNhan.diaChi = '';
                 vm.benhNhan.soDienThoai = '';
+                vm.benhNhan.ngaySinh
             };
 
 
@@ -88,6 +90,7 @@
                 vm.benhNhan.gioiTinh = benhNhan.gioiTinh;
                 vm.benhNhan.diaChi = benhNhan.diaChi;
                 vm.benhNhan.soDienThoai = benhNhan.soDienThoai;
+                vm.benhNhan.ngaySinh = benhNhan.ngaySinh;
                 vm.entity = benhNhan;
             }
             // save data
@@ -95,7 +98,7 @@
                 abp.ui.setBusy();
                 benhNhanService.create(vm.benhNhan)
                     .then(function () {
-                        abp.notify.info(App.localize('SavedSuccessfully'));
+                        abp.notify.info(App.localize('Saved Successfully'));
                         $uibModalInstance.close();
                     }).finally(function () {
                         abp.ui.clearBusy();
@@ -112,11 +115,12 @@
                 x.gioiTinh = data.benhNhan.gioiTinh;
                 x.diaChi = data.benhNhan.diaChi;
                 x.soDienThoai = data.benhNhan.soDienThoai;
+                x.ngaySinh = data.benhNhan.ngaySinh;
                 debugger
                 abp.ui.setBusy();
                 benhNhanService.update(x)
                     .then(function () {
-                        abp.notify.info(App.localize('SavedSuccessfully'));
+                        abp.notify.info(App.localize('Saved Successfully'));
                         $uibModalInstance.close();
                     }).finally(function () {
                         abp.ui.clearBusy();
