@@ -12,6 +12,7 @@
 
             vm.showSubmit = true;
             vm.showEdit = false;
+
             // model
             vm.benhNhan = {
                 ho:'',
@@ -29,19 +30,7 @@
             };
 
 
-            //vm.openModalCreateOrEditBenhNhan = function () {
-            //    var modalInstance = $uibModal.open({
-            //        templateUrl: '/App/Main/views/benhnhan/createOrEditModalBenhNhan.cshtml',
-            //        controller: 'Main.views.benhnhan.createOrEditModalBenhNhan as vm',
-            //        backdrop: 'static'
-            //    });
-            //    modalInstance.result.then(function () {
-            //        getDSBenhNhans();
-            //    });
-            //    modalInstance.result.then(function () {
-            //        getDSBenhNhans();
-            //    });
-            //}
+      
 
             vm.openBenhNhanCreationModal = function () {
                 $('#exampleModal').modal('show');
@@ -58,28 +47,7 @@
 
 
 
-            //vm.openBenhNhanEditModal = function (benhNhan) {
-            //    var modalInstance = $uibModal.open({
-            //        templateUrl: '/App/Main/views/benhnhan/createOrEditModalBenhNhan.cshtml', // path đến file cshtml
-            //        controller: 'app.main.views.benhNhan.createOrEditModalBenhNhan as vm', //path đến file js
-            //        backdrop: 'static',
-            //        resolve: {
-            //            id: function () {
-            //                //console.log(benhNhan.id);
-            //                return benhNhan.id;
-            //            }
-            //        }
-            //    });
-            //    modalInstance.rendered.then(function () {
-            //        $timeout(function () {
-            //            $.AdminBSB.input.activate();
-            //        }, 0);
-            //    });
-
-            //    modalInstance.result.then(function () {
-            //        getDSBenhNhans();
-            //    });
-            //};
+           
             vm.openBenhNhanEditModal = function (benhNhan) {
                 $('#exampleModal').modal('show');
                 vm.showSubmit = false;
